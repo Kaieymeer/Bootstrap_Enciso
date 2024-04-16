@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+     rel="stylesheet">
+     />
+    <title>Intro to Bootstrap 5</title>
+</head>
+<body>
+    <div class="container-fluid p-5 bg-dark text-primary text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p class="text-white">Resize this responsive page to see the effect!</p>
+        <p class="text-white">Welcome to my site</p>
+      </div>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="0"
+        class="active"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="2"
+      ></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="Image/Palawan-travel-936549056388.jpg"
+          alt="Palawan"
+          class="d-block"
+          style="width: 100%"
+          height="400px"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="Image/Bohol-4a.jpg"
+          alt="Bohol"
+          class="d-block"
+          style="width: 100%"
+          height="400px"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="Image/Boracay.jpg"
+          alt="Boracay"
+          class="d-block"
+          style="width: 100%"
+          height="400px"
+        />
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#demo"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#demo"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3 class="text-bg-warning text-center"> Cultural Pollunation</h3>
+            <p>
+             describes the exchange of ideas, customs, and traditions between different cultures. Like pollination in nature, where pollen fertilizes plants, 
+             cultural pollination leads to the enrichment and diversification of human societies. It occurs through trade, migration, globalization, and other interactions,
+              resulting in the emergence of new cultural expressions and identities. While it drives innovation and progress, it can also pose challenges like cultural appro
+              priation and identity conflicts. Managing cultural pollination is essential for promoting diversity and mutual understanding among communities.
+
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="text-bg-warning text-center">Culture</h3>
+            <p>
+              refers to the shared beliefs, customs, values, behaviors, and artifacts that characterize a particular group of people or society. It encompasses the way of 
+              life of a community, including its language, traditions, arts, cuisine, social norms, and institutions. Culture is transmitted from one generation to the next
+               through socialization and serves as a framework for interpreting the world, shaping individual identities, and guiding social interactions. It is dynamic and
+                constantly evolving, influenced by historical, geographical, economic, and social factors. Culture plays a crucial role in shaping human societies, providing 
+                a sense of belonging and identity, and fostering creativity, innovation, and mutual understanding.
+                
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="text-bg-warning text-center">Cultural Appropriation</h3>
+            <p>
+                refers to the adoption, use, or exploitation of elements of one culture by members of another culture, 
+                often without understanding or respecting the original cultural significance or context. This can include
+                 aspects such as clothing, symbols, rituals, music, language, or religious practices. Cultural appropriation
+                  is often criticized as it can perpetuate stereotypes, marginalize the original culture, and reinforc
+                  e power imbalances between dominant and marginalized groups.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="container mt-3">
+              <h2>Card Image</h2>
+  
+              <div class="card" style="width: 400px">
+                <img
+                  class="card-img-top"
+                  src="Image/moustache.jpg"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">John Doe</h4>
+                  <p class="card-text">
+                    Some example text some example text. John Doe is an architect
+                    and engineer
+                  </p>
+                  <div class="container mt-3">
+                      
+                      
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        See Profile
+                      </button>
+                    </div>
+                    
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                    
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            Modal body..
+                          </div>
+                    
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                          </div>
+                    
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <br />
+  
+              <img src="Image/Palawan-travel-936549056388.jpg" class="rounded" alt="abstract" height="400px" width="400px">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="container mt-3">
+              <h2>Card Image</h2>
+  
+              <div class="card" style="width: 400px">
+                <img
+                  class="card-img-top"
+                  src="Image/moustache.jpg"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">John Doe</h4>
+                  <p class="card-text">
+                    Some example text some example text. John Doe is an architect
+                    and engineer
+                  </p>
+                  <div class="container mt-3">
+             
+                      
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        See Profile
+                      </button>
+                    </div>
+                    
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                    
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            Modal body..
+                          </div>
+                    
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                          </div>
+                    
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <br />
+  
+              <img src="Image/Boracay.jpg" class="img-thumbnail" alt="abstract2" height="400px" width="400px">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="container mt-3">
+              <h2>Card Image</h2>
+  
+              <div class="card" style="width: 400px">
+                <img
+                  class="card-img-top"
+                  src="Image/moustache.jpg"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+                <div class="card-body">
+                  <h4 class="card-title">John Doe</h4>
+                  <p class="card-text">
+                    Some example text some example text. John Doe is an architect
+                    and engineer
+                  </p>
+                  <div class="container mt-3">
+                
+                    
+                      
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        See Profile
+                      </button>
+                    </div>
+                    
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                    
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            Modal body..
+                          </div>
+                    
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                          </div>
+                    
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <br />
+  
+              <img src="Image/Bohol-4a.jpg" class="rounded-circle" alt="abstract3" height="400px" width="400px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-body-tertiary text-center">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a
+              data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
+                style="background-color: #3b5998;"
+                href="https://www.facebook.com/"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+        
+              <!-- Twitter -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
+                style="background-color: #55acee;"
+                href="https://twitter.com/home?lang-en"
+                role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
+        
+              <!-- Google -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
+                style="background-color: #dd4b39;"
+                href="https://www.google.com/"
+                role="button"
+                ><i class="fab fa-google"></i
+              ></a>
+        
+              <!-- Instagram -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
+                style="background-color: #ac2bac;"
+                href="https://www.instagram.com/?hl=en"
+                role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
+                style="background-color: #0082ca;"
+                href="#!"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <!-- Github -->
+              <a
+                data-mdb-ripple-init
+                class="btn text-white btn-floating m-1"
+                style="background-color: #333333;"
+                href="https://github.com/"
+                role="button"
+                ><i class="fab fa-github"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-body" href="https://mdbootstrap.com/">wwww.kaymerenciso.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
